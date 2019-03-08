@@ -45,4 +45,11 @@ public class DataReader {
 
         return new Book(title,author,releaseDate,pages,publisher,isbn);
     }
+
+    //pozwala na odczytanie pojedynczej liczby typu int
+    public int getInt(){
+        int number=sc.nextInt();
+        sc.nextLine();
+        return number;
+    }
 }
