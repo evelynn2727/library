@@ -3,7 +3,7 @@ package app;
 import data.Book;
 import utils.DataReader;
 
-public class Library {
+public class LibraryApp {
     public static void main(String[] args){
         final String appName="Biblioteka v.03";
 
