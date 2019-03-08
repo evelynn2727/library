@@ -1,16 +1,16 @@
 package data;
 
 public class Library {
-    public final int maxBooks=1000; //maksymalna liczba ksiazek
+    public static final int MAX_BOOKS=1000; //maksymalna liczba ksiazek
     private int booksNumber;//rzeczysiwsta liczba ksiazek w bibliotece
     private Book[] books;
 
     public Library() {
-        books= new Book[maxBooks];
+        books= new Book[MAX_BOOKS];
     }
 
-    public int getMaxBooks() {
-        return maxBooks;
+    public int getMAX_BOOKS() {
+        return MAX_BOOKS;
     }
 
     public int getBooksNumber() {
@@ -24,7 +24,7 @@ public class Library {
     //pozwala dodawac nowe pozycje do istniejeacego zbioru
 
     public void addBook(Book book){
-        if(booksNumber<maxBooks){
+        if(booksNumber<MAX_BOOKS){
             books[booksNumber]=book;
             booksNumber++;
         }
