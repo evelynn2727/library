@@ -29,6 +29,28 @@ public class Publication {
         this.publisher = publisher;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (!(o instanceof Publication))
+            return false;
+        Publication that = (Publication) o;
+
+        return getYear() == that.getYear() &&
+                getTitle().equals(that.getTitle()) &&
+                getPublisher().equals(that.getPublisher());
+    }
+
+    @Override
+    public int hashCode() {
+       final int prime= 31;
+       int result=1;
+       result=prime*result+((publisher==null)?0: publisher.hashCode());
+        result=prime*result+((title==null)?0:title.hashCode());
+        result=prime*result+year;
+        return result;
+    }
 
     protected Publication(int year, String title, String publisher) {
         setYear(year);
