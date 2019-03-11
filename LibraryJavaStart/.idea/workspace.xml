@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb01e97e-7080-4d8e-84c3-c951eed66a6f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Option.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/LibraryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/LibraryApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Magazine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/LibraryControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/LibraryApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/LibraryApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/LibraryControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/LibraryControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Magazine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Magazine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Publication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Publication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/DataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/DataReader.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/data/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+            <state relative-caret-position="765">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -41,23 +44,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/data/Magazine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="765">
               <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
                 <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#1419#1420#0" expanded="true" />
-                <element signature="e#1509#1510#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/data/Publication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="51" selection-end-column="22" />
+            <state relative-caret-position="578">
+              <caret line="46" selection-start-line="46" selection-end-line="51" selection-end-column="22" />
               <folding>
                 <element signature="e#146#147#0" expanded="true" />
                 <element signature="e#173#174#0" expanded="true" />
@@ -101,6 +92,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -116,19 +108,20 @@
         <option value="$PROJECT_DIR$/src/main/java/logic/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/DataReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/LibraryControl.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Publication.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Magazine.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/LibraryApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/Option.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/LibraryControl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="702" />
+    <option name="x" value="639" />
     <option name="y" value="6" />
-    <option name="width" value="674" />
+    <option name="width" value="737" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -137,6 +130,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,12 +177,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552071900461" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552342602738" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -243,10 +236,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="702" y="6" width="674" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="639" y="6" width="737" height="744" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.30456027" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30428362" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -299,24 +291,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/LibraryControl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+        <state relative-caret-position="765">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Magazine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#2157#2158#0" expanded="true" />
-            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data/Publication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="51" selection-end-column="22" />
+        <state relative-caret-position="578">
+          <caret line="46" selection-start-line="46" selection-end-line="51" selection-end-column="22" />
           <folding>
             <element signature="e#146#147#0" expanded="true" />
             <element signature="e#173#174#0" expanded="true" />
@@ -334,40 +337,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/Option.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/Magazine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/LibraryControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="89">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
+            <element signature="e#2197#2198#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
         </state>
       </provider>
     </entry>
