@@ -1,82 +1,70 @@
 package data;
 
 public class Library {
-    public static final int MAX_BOOKS=1000; //maksymalna liczba ksiazek
-    public static final int MAX_MAGAZINES=1000;
-    private int booksNumber;//rzeczysiwsta liczba ksiazek w bibliotece
-    private Book[] books;
-    private int magazinesNumber;
-    private Magazine[] magazines;
+    public static final int MAX_PUBLICATIONS=2000; //maksymalna liczba ksiazek I MAGAZYNOW
+    private Publication[] publications;
+    private int publicationsNumber;
+
+    public static int getMaxPublications() {
+        return MAX_PUBLICATIONS;
+    }
+
+    public Publication[] getPublications() {
+        return publications;
+    }
+
+    public void setPublications(Publication[] publications) {
+        this.publications = publications;
+    }
+
+    public int getPublicationsNumber() {
+        return publicationsNumber;
+    }
+
+    public void setPublicationsNumber(int publicationsNumber) {
+        this.publicationsNumber = publicationsNumber;
+    }
 
     public Library() {
-        books= new Book[MAX_BOOKS];
-        magazines=new Magazine[MAX_MAGAZINES];
+        publications= new Publication[MAX_PUBLICATIONS];
     }
 
-    public static int getMaxMagazines() {
-        return MAX_MAGAZINES;
-    }
-
-    public int getMagazinesNumber() {
-        return magazinesNumber;
-    }
-
-    public void setMagazinesNumber(int magazinesNumber) {
-        this.magazinesNumber = magazinesNumber;
-    }
-
-    public Magazine[] getMagazines() {
-        return magazines;
-    }
-
-    public void setMagazines(Magazine[] magazines) {
-        this.magazines = magazines;
-    }
-
-    public int getMAX_BOOKS() {
-        return MAX_BOOKS;
-    }
-
-    public int getBooksNumber() {
-        return booksNumber;
-    }
-
-    public Book[] getBooks() {
-        return books;
-    }
-
-    //pozwala dodawac nowe pozycje do istniejeacego zbioru
-
-    public void addBook(Book book){
-        if(booksNumber<MAX_BOOKS){
-            books[booksNumber]=book;
-            booksNumber++;
+    public void addPublications(Publication pub){
+        if(publicationsNumber<MAX_PUBLICATIONS){
+            publications[publicationsNumber]=pub;
+            publicationsNumber++;
         }
         else
-            System.out.println("Maksymalna liczba ksiazek zostala osiagnieta");
+            System.out.println("Maksymalna liczba publikacji zostala osiagnieta");
     }
     //metoda wyswietlajaca dane ksiazek w bibliotece
     public void printBooks(){
-        if(booksNumber==0)
-            System.out.println("Brak ksiazek w bibliotece");
-        for (Book bookPrint: books) {
-            System.out.println(bookPrint);
+        int countBooks=0;
+        for (int i=0;i<publicationsNumber;i++){
+            if (publications[i] instanceof Book){
+                System.out.println(publications[i]);
+                countBooks++;
+            }
         }
+        if (countBooks==0)
+            System.out.println("Brak ksiazek w bibliotece");
     }
 
     public void addMagazines(Magazine magazine){
-        if(booksNumber<MAX_MAGAZINES){
-            magazines[magazinesNumber]=magazine;
-            magazinesNumber++;
-        }
-        else
-            System.out.println("Maksymalna liczba gazet zostala osiagnieta");
+     addPublications(magazine);
+    }
+    public void addBooks(Book book){
+        addPublications(book);
     }
     public void printMagazines(){
-        if(magazinesNumber==0)
-            System.out.println("Brak ksiazek w bibliotece");
-        for (Magazine magaz:magazines) {
-            System.out.println(magaz);
+        int countMagazines=0;
+        for (int i=0;i<publicationsNumber;i++){
+            if (publications[i] instanceof Magazine){
+                System.out.println(publications[i]);
+                countMagazines++;
+            }
         }
+        if (countMagazines==0)
+            System.out.println("Brak magazynow w bibliotece");
     }
 }
