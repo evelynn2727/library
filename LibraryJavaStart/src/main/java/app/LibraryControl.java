@@ -54,7 +54,7 @@ public class LibraryControl {
     }
     private void addBook(){
         Book book= dataReader.readAndCreateBook();
-        library.addBook(book);
+        library.addPublications(book);
     }
     private void printBooks(){
         library.printBooks();
