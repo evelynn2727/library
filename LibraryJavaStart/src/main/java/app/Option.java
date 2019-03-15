@@ -1,5 +1,7 @@
 package app;
 
+import java.util.NoSuchElementException;
+
 public enum Option {
     EXIT(0, "Wyjscie z programu"),
     ADD_BOOK(1,"Dodanie ksiazki"),
@@ -30,7 +32,14 @@ public enum Option {
 
     //pozwala przeksztalcic wartosc typi int na odpowiednia wartosc typu Option
    //metoda ta dzieki values() zwraca tablice wszystkich wartosic, a poniewaz kolejne elementy numerujemy od 0, to zwracamy po prostu odpowiedni element tej tablicy
-    public static Option createFromInt(int option){
-        return Option.values()[option];
+    public static Option createFromInt(int option) throws NoSuchElementException {
+        Option result=null;
+        try{
+            result=Option.values()[option];
+        }catch (ArrayIndexOutOfBoundsException e){
+            //thr - throw new +Tab
+            throw new NoSuchElementException("Brak elementu o wskazanym id");
+        }
+        return result;
     }
 }
