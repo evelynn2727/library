@@ -4,28 +4,36 @@ import data.Book;
 import data.Library;
 import data.Magazine;
 import utils.DataReader;
+import utils.FileManager;
 import utils.LibraryUtils;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 
 public class LibraryControl {
     //zmienna do komunikacji z uzytkownikiem
     private DataReader dataReader;
+    private FileManager fileManager;
 
     //"biblioteka" przechowujaca dane
     private Library library;
 
     public LibraryControl(){
         dataReader=new DataReader();
-        library= new Library();
+        fileManager= new FileManager();
+        try{
+            library= fileManager.readLibraryFromFile();
+            System.out.println("Wczytano dane do biblioteki z pliku");
+        }catch (ClassNotFoundException | IOException e){
+            library= new Library();
+            System.out.println("Utworzono nową baze biblioteki");
+        }
     }
 
     //glowna petla programu, ktoa pozwala na wybor opcji i interakcje
     public void controlLoop(){
         Option option= null;
-        printOptions();
-
         while(option!=Option.EXIT){
             try {
                 printOptions();
@@ -79,6 +87,9 @@ public class LibraryControl {
         LibraryUtils.printMagazines(library);
     }
 
+    private void exit(){
+        fileManager.writeLibraryToFile(library);
+    }
     public enum Option {
         EXIT(0, "Wyjscie z programu"),
         ADD_BOOK(1,"Dodanie ksiazki"),
