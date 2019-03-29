@@ -5,11 +5,14 @@ import data.Library;
 import data.Magazine;
 import data.Publication;
 
+import java.util.Arrays;
+
 public class LibraryUtils {
 
     //metoda wyswietlajaca dane ksiazek w bibliotece
     public static void printBooks(Library library){
         Publication[] publications= library.getPublications();
+        Arrays.sort(publications, new Library.AlphabeticalComparator());
         int countBooks=0;
         for (int i=0;i<library.getPublicationsNumber();i++){
             if (publications[i] instanceof Book){
@@ -23,6 +26,7 @@ public class LibraryUtils {
 
     public static void printMagazines(Library library){
         Publication[] publications=library.getPublications();
+        Arrays.sort(publications, new Library.AlphabeticalComparator());
         int countMagazines=0;
         for (int i=0;i<library.getPublicationsNumber();i++){
             if (publications[i] instanceof Magazine){

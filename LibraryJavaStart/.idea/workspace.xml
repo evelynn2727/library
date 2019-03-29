@@ -4,6 +4,11 @@
     <list default="true" id="cb01e97e-7080-4d8e-84c3-c951eed66a6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LibraryUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/LibraryUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/Publication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Publication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/LibraryUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/LibraryUtils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,26 +26,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/data/Library.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/LibraryUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="263">
+              <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
-                <element signature="e#1611#1612#0" expanded="true" />
-                <element signature="e#1648#1649#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/data/Publication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="5" selection-start-line="23" selection-start-column="27" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -66,16 +58,16 @@
         <option value="$PROJECT_DIR$/src/main/java/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/Library.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/LibraryUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/Option.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/DataReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Publication.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Magazine.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/FileManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/LibraryControl.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/LibraryApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/Publication.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Library.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/LibraryUtils.java" />
       </list>
     </option>
   </component>
@@ -206,9 +198,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="621" y="13" width="737" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17134416" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17577548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -251,16 +242,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/LibraryUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/DataReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -323,21 +304,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data/Publication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="5" selection-start-line="23" selection-start-column="27" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="274">
+          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+          <folding>
+            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="121">
+          <caret line="73" column="98" selection-start-line="73" selection-start-column="98" selection-end-line="73" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1611#1612#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/LibraryUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
