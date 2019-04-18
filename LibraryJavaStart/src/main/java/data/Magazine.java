@@ -36,9 +36,7 @@ public class Magazine extends Publication {
 
     @Override
     public String toString() {
-        StringBuilder print= new StringBuilder(32);//rozmiar wykorzystywanego bufora w wewnetrznej rezentacji tej klasy,
-        //32 oznacza ilosc znakow, ktore sie zmieszcza w pojedynczym napisie przekazywanym w metodach append()
-        //w przypadku gdy napis bedzie dluzszy bufor zostaje podwojony - lepiej mu zapewnic rozmiar niz zrzucac te czynnosc na wirtualna maszyne
+        StringBuilder print= new StringBuilder(32);
         print.append(getTitle());
         print.append("; ");
         print.append(getPublisher());

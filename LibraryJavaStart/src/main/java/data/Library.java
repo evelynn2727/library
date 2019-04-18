@@ -1,7 +1,6 @@
 package data;
 
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
@@ -48,28 +47,6 @@ public class Library implements Serializable {
     }
 
     public void removePublication(Publication pub){
-        // remove() pozwala na usunięcie obiektu Publication z tablicy jednocześnie nie
-        //pozostawiając w niej pustych miejsc, ponieważ wszystkie elementy, które znajdowały się "na
-        //prawo" od usuniętego elementu zostają dosunięte w puste miejsce za pomocą metody
-        //System.arraycopy()
-//        if(pub==null){
-//            return;
-//        }
-//
-//        final int NOT_FOUND=-1;
-//        int found= NOT_FOUND;
-//        int i=0;
-//        while (i<publications.length && found==NOT_FOUND){
-//            if (pub.equals(publications[i])){
-//                found=i;
-//            }else{
-//                i++;
-//            }
-//        }
-//        if(found!=NOT_FOUND){
-//            System.arraycopy(publications, found+1,publications,found, publications.length);
-//            publicationsNumber--;
-//        } //to juz nie bo uzywamy map
         if(publications.containsValue(pub)){
             publications.remove(pub.getTitle());
         }
@@ -85,7 +62,7 @@ public class Library implements Serializable {
         users.put(user.getPesel(),user);
     }
     public static class AlphabeticalComparator implements Comparator<Publication>{
-//dzieki temu, ze sa statyczne nie trzeba tworzyc instancji kalsy Library do poslugiwania sie nimi
+
         @Override
         public int compare(Publication o1, Publication o2) {
             if(o1==null && o2==null)

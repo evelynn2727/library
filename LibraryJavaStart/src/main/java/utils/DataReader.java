@@ -8,7 +8,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DataReader {
-    //pozwala na tworzenie nowych ksiazek na podstawie danych od uzytkownika
+
     private Scanner sc;
 
     public Scanner getSc() {
@@ -82,7 +82,7 @@ public class DataReader {
         return new Magazine(title,publisher,language,year,month,day);
     }
 
-    //pozwala na odczytanie pojedynczej liczby typu int
+
     public int getInt(){
         int number=0;
         try{

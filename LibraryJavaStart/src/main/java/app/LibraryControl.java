@@ -13,11 +13,11 @@ import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 
 public class LibraryControl {
-    //zmienna do komunikacji z uzytkownikiem
+
     private DataReader dataReader;
     private FileManager fileManager;
 
-    //"biblioteka" przechowujaca dane
+
     private Library library;
 
     public LibraryControl(){
@@ -32,7 +32,6 @@ public class LibraryControl {
         }
     }
 
-    //glowna petla programu, ktoa pozwala na wybor opcji i interakcje
     public void controlLoop(){
         Option option= null;
         while(option!=Option.EXIT){
@@ -68,7 +67,6 @@ public class LibraryControl {
                 System.out.println("Wybrana opcja nie istnieje");
             }
         }
-        //zamykamy strumien wejscia
         dataReader.close();
     }
     private void printOptions(){
@@ -112,9 +110,9 @@ public class LibraryControl {
         PRINT_MAGAZINES(4,"Wyswietlanie dostepnych magazynow/gazet"),
         ADD_USER(5, "Dodanie nowego uzytkownika"),
         PRINT_USERS(6, "Wyswietlenie listy uzytkownikow");
-        //przechowuje informacje o dwoch wartosciach
-        private int value;//przechowuje mozliwa do wprowadzenia przez uzytkownika wartosc
-        private String description;//opis tego za co odpowiada dana wartosc
+
+        private int value;
+        private String description;
 
         Option(int value, String description) {
             this.value = value;
@@ -125,15 +123,11 @@ public class LibraryControl {
         public String toString() {
             return  value + " - " + description;
         }
-
-        //pozwala przeksztalcic wartosc typi int na odpowiednia wartosc typu Option
-        //metoda ta dzieki values() zwraca tablice wszystkich wartosic, a poniewaz kolejne elementy numerujemy od 0, to zwracamy po prostu odpowiedni element tej tablicy
         public static Option createFromInt(int option) throws NoSuchElementException {
             Option result=null;
             try{
                 result=Option.values()[option];
             }catch (ArrayIndexOutOfBoundsException e){
-                //thr - throw new +Tab
                 throw new NoSuchElementException("Brak elementu o wskazanym id");
             }
             return result;
