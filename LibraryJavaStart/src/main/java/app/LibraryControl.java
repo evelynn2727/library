@@ -2,6 +2,7 @@ package app;
 
 import data.Book;
 import data.Library;
+import data.LibraryUser;
 import data.Magazine;
 import utils.DataReader;
 import utils.FileManager;
@@ -52,6 +53,12 @@ public class LibraryControl {
                     case PRINT_MAGAZINES:
                         printMagazine();
                         break;
+                    case ADD_USER:
+                        addUser();
+                        break;
+                    case PRINT_USERS:
+                        printUsers();
+                        break;
                     default:
                         System.out.println("nie ma takiej opcji, wprowadz ponownie");
                 }
@@ -87,6 +94,13 @@ public class LibraryControl {
         LibraryUtils.printMagazines(library);
     }
 
+    private void addUser(){
+        LibraryUser user= dataReader.readAndCreateLibraryUser();
+        library.addUsers(user);
+    }
+    private void printUsers(){
+        LibraryUtils.printUsers(library);
+    }
     private void exit(){
         fileManager.writeLibraryToFile(library);
     }
@@ -95,8 +109,9 @@ public class LibraryControl {
         ADD_BOOK(1,"Dodanie ksiazki"),
         ADD_MAGAZINES(2, "Dodanie magazynu/gazety"),
         PRINT_BOOKS(3, "Wyswietlanie dostepych ksiazek"),
-        PRINT_MAGAZINES(4,"Wyswietlanie dostepnych magazynow/gazet");
-
+        PRINT_MAGAZINES(4,"Wyswietlanie dostepnych magazynow/gazet"),
+        ADD_USER(5, "Dodanie nowego uzytkownika"),
+        PRINT_USERS(6, "Wyswietlenie listy uzytkownikow");
         //przechowuje informacje o dwoch wartosciach
         private int value;//przechowuje mozliwa do wprowadzenia przez uzytkownika wartosc
         private String description;//opis tego za co odpowiada dana wartosc
